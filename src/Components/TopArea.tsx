@@ -2,12 +2,7 @@ import { useContext, useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { ThemeContext } from "../contexts/ThemeContext";
 import { UserProps } from "../Types/index";
-import {
-  GithubOutlined,
-  MoonOutlined,
-  SearchOutlined,
-  SunOutlined,
-} from "@ant-design/icons";
+import { GithubOutlined, MoonOutlined, SunOutlined } from "@ant-design/icons";
 import { TopAreaProps } from "../Types";
 import { joinedDate } from "../Utils/formatter";
 
