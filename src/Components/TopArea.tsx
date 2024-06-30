@@ -74,7 +74,7 @@ export const TopArea = ({ setUser }: TopAreaProps) => {
     <Container>
       <ThemeArea>
         {" "}
-        <div className="flex flex-row justify-start items-start">
+        <div className="flex flex-row items-start justify-start">
           <div className="text">UserSearch</div>
           <GithubOutlined />
         </div>
@@ -99,7 +99,7 @@ export const TopArea = ({ setUser }: TopAreaProps) => {
         }}
       >
         <InputLabel>
-          <img src="F:\Documents\GitHub\BuscadorGithub\src\assets" />
+          <img src="https://vite-github-user-search-app.vercel.app/assets/icon-search.svg" />
         </InputLabel>
         <Input
           ref={usernameRef}
@@ -108,6 +108,8 @@ export const TopArea = ({ setUser }: TopAreaProps) => {
           type="text"
           placeholder="Search username....."
         />
+        {empty && <Warn>Enter User</Warn>}
+        {notFound && <Warn>Not Found</Warn>}
         <SubmitBtn type="submit">Search</SubmitBtn>
       </InputArea>
     </Container>
@@ -115,8 +117,9 @@ export const TopArea = ({ setUser }: TopAreaProps) => {
 };
 
 const Container = styled.header`
-  width: 100%;
+  width: 70%;
   max-width: 73.3rem;
+  height: 75%;
 `;
 
 const ThemeArea = styled.div`

@@ -25,8 +25,11 @@ export const TopArea = ({
             {" "}
             <a href={`https://github.com/${username}`}>@{username}</a>
           </Username>
+
+          <JoinedAt>{joinedAt}</JoinedAt>
         </SideInfo>
-      </Info>
+      </Info>{" "}
+      <Bio>{bio}</Bio>
     </>
   );
 };

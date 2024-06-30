@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { TopArea } from "./TopArea";
 import LinksArea from "./LinksArea";
-import StartArea from "./StartArea";
+import { StartArea } from "./StartArea";
 import { UserDataProps } from "../../Types";
 
 export const Index = ({ user }: UserDataProps) => {
@@ -17,13 +17,19 @@ export const Index = ({ user }: UserDataProps) => {
           joinedAt={user.joinedAt}
           pfp={user.pfp}
         />
+        <StartArea
+          repos={user.repos}
+          follower={user.followers}
+          following={user.following}
+        />
+        <LinksArea links={user.links} />
       </SideArea>
     </Container>
   );
 };
 
 const Container = styled.section`
-  width: 100%;
+  width: 70%;
   padding: 3rem 2.4rem;
   background: ${(props) => props.theme.colors.card};
 
