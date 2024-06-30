@@ -3,6 +3,8 @@ import { ThemeContextProvider } from "./contexts/ThemeContext";
 import { TopArea } from "./Components/TopArea";
 import { useState } from "react";
 import { UserProps } from "./Types";
+import { Index } from "./Components/UserData";
+
 function App() {
   const [user, setUser] = useState<UserProps | null>(null);
 
@@ -14,6 +16,7 @@ function App() {
     <ThemeContextProvider>
       <Container>
         <TopArea setUser={setUserData} />
+        {user && <Index user={user} />}
       </Container>
     </ThemeContextProvider>
   );
