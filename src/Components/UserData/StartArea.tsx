@@ -38,7 +38,7 @@ const Container = styled.div`
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 1.8rem 3.2rem;
+    padding: 1rem 3.5rem;
   }
 `;
 
@@ -53,13 +53,13 @@ const Data = styled.li`
   }
 
   span {
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 1.6rem;
     text-align: center;
     color: ${(props) => props.theme.colors.textNorm};
 
     @media (min-width: 768px) {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
   }
 
@@ -73,7 +73,7 @@ const Data = styled.li`
 
     @media (min-width: 768px) {
       margin-top: 1rem;
-      font-size: 2.4rem;
+      font-size: 2.1rem;
     }
   }
 `;

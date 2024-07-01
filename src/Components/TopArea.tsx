@@ -115,6 +115,9 @@ const Container = styled.header`
   width: 100%;
   max-width: 73.3rem;
   height: 75%;
+  @media (min-width: 768px) {
+    height: 75%;
+  }
 `;
 
 const ThemeArea = styled.div`
@@ -196,14 +199,14 @@ const Input = styled.input`
 const SubmitBtn = styled.button`
   background: #0079ff;
   border: none;
-  height: 100%;
+  height: 75%;
   border-radius: 1rem;
   line-height: 2.1rem;
   font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
   cursor: pointer;
-  width: 8.4rem;
+  width: 8rem;
   transition: all 0.3s ease-out;
 
   &:hover {
@@ -212,7 +215,7 @@ const SubmitBtn = styled.button`
   }
 
   @media (min-width: 768px) {
-    width: 10.6rem;
+    width: 8.9rem;
     font-size: 1.7rem;
   }
 `;

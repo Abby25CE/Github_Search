@@ -42,12 +42,12 @@ const Info = styled.div`
 const Bio = styled.p`
   color: ${(props) => props.theme.colors.textNorm};
   font-size: 1.4rem;
-  line-height: 192%;
+  line-height: 120%;
   margin: 3.3rem 0 2.3rem;
 
   @media (min-width: 768px) {
     margin: 2.2rem 0 3.3rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 `;
 
@@ -90,7 +90,7 @@ const Name = styled.strong`
   color: ${(props) => props.theme.colors.textBolded};
 
   @media (min-width: 768px) {
-    font-size: 2.7rem;
+    font-size: 1.7rem;
   }
 `;
 
@@ -101,7 +101,7 @@ const Username = styled.span`
   margin-bottom: 0.6rem;
 
   @media (min-width: 768px) {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-top: 0.5rem;
   }
 `;
@@ -112,6 +112,6 @@ const JoinedAt = styled.span`
   color: ${(props) => props.theme.colors.textNorm};
 
   @media (min-width: 768px) {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 `;

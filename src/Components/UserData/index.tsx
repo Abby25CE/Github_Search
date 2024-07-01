@@ -58,8 +58,8 @@ const Container = styled.section`
 `;
 
 const Pfp = styled.img`
-  height: 117px;
-  width: 117px;
+  height: 85px;
+  width: 85px;
   border-radius: 50%;
   margin-right: 3.7rem;
   display: none;
