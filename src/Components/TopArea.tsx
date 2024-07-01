@@ -112,7 +112,7 @@ export const TopArea = ({ setUser }: TopAreaProps) => {
 };
 
 const Container = styled.header`
-  width: 70%;
+  width: 100%;
   max-width: 73.3rem;
   height: 75%;
 `;

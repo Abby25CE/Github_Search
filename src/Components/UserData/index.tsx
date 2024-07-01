@@ -29,7 +29,7 @@ export const Index = ({ user }: UserDataProps) => {
 };
 
 const Container = styled.section`
-  width: 70%;
+  width: 100%;
   padding: 3rem 2.4rem;
   background: ${(props) => props.theme.colors.card};
 
